@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+
+<head> 
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Landing page videoondemand</title> 
+
+<style>
+
+* {
+margin: 0;
+box-sizing: border-box;}
+
+html {
+background: white;
+margin: 0;}
+
+body {
+width: 100vw;
+height: 100%;}
+
+.navbar {
+background: linear-gradient(90deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+color: white;
+height: 50px;
+width: 100vw;
+font-size: 1.5rem;
+padding: 10px 15px;
+position: sticky;
+top: 0;
+}
+
+.smaller {
+font-size: 0.5rem;
+font-family: cursive;}
+
+.navbar a {
+float: right;
+color: white;
+padding: 12px;
+text-decoration: none;
+padding: 0px 10px;
+}
+
+.navbar a:first-of-type {
+  float: left;
+  }
+
+.navbar a:last-of-type {
+background: #A020F0;
+border-radius: 30px;
+transition-duration: 0.8s;}
+
+.navbar a:last-of-type:hover {
+background: white;
+color: black;}
+  
+  .red {
+ color: red;
+  }
+  
+.section1 {
+background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/db81a53f-1e95-40aa-8cb9-4e7f8e58e408/SE-sv-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+  
+ .section1{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  }
+ 
+  
+  
+  .section1 h1 ,h2 ,h3 {
+  color: white;
+  font-family: sans-serif;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 900;
+  }
+  
+  .section1 input {
+ display: block; 
+ width: 50%;
+ margin: 10px auto;
+ padding: 15px;
+ text-align: center;
+ background: rgb(240, 240, 240);
+ border-radius: 30px;
+ color: black;
+  }
+  
+  #email {
+  background: red;
+  }
+  
+  ::placeholder {
+  color: white;
+  }
+ 
+  #submitbutton:hover {
+ background: #A020F0;
+ transition-duration: 0.8s;
+  }
+  
+
+.section2 {
+width: 100vw;
+background: black;
+margin-top: -0.5rem;
+padding: 30px;
+color: white;
+font-size: 1rem;
+display: grid;
+grid-template-columns: 1fr 1fr; 
+justify-items: center;}
+
+.section2 h1 {
+padding: 90px 0;
+font-family: georgia;}
+  
+
+.section2 img {
+width: 300px;
+height: 150px;
+object-fit: cover;}
+
+
+.imgs {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 1rem;
+margin-top: 1rem;
+}
+  
+  .section3 {
+ background: black;
+ background-size: cover;
+ width: 100vw;
+ gap: 2rem;
+ padding: 3rem;
+  }
+  
+  .gallery {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  }
+  
+  
+  
+ .section3 > h1 {
+ text-align: center;
+ color: white;
+ font-family: georgia;
+ text-wrap: wrap; 
+ overflow: hidden;
+ padding: 1rem;
+  }
+  
+ 
+  
+ .section3 img {
+ width: 300px;
+ height: 150px;
+ object-fit: cover;
+ overflow-clip-margin: content-box;
+ overflow: auto;
+
+  }
+ 
+  .section4 {
+ background: black;
+ 
+ width: 100vw;
+ color: white;
+ font-family: georgia;
+ padding: 1rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-items: center;
+  }
+  
+  .movieexamples {
+display: grid; 
+grid-template-columns: 1fr 1fr;
+grid-gap: 1rem;}
+  
+  .movies {
+  text-align: center;
+  padding: 90px 0;}
+  
+  
+  .section4 h1 {
+  color: white; 
+  }
+  
+  #bigletter {
+  font-size: 4rem;
+  color: red;
+  }
+  
+
+  
+  .movieexamples img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+     }
+
+.section5 h1 {
+color: white;
+background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com") no-repeat fixed;
+background-size: cover;
+text-align: center;
+padding: 20px;
+font-family: georgia;}
+
+
+.subscribe {
+display: flex; 
+justify-content: center;
+flex-wrap: wrap;
+width: 100vw;
+gap: 2rem;
+padding: 20px;
+background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com") no-repeat fixed;
+background-size: cover;}
+
+.boxes {
+height: 200px;
+width: 400px;
+border: 1px solid #751692;
+border-radius: 8px;
+box-shadow: 1px 1px 2px 2px #666;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.boxes p {
+text-wrap: wrap;
+color: white;
+font-family: Copperplate;
+text-align: center;
+padding: 8px;}
+
+.button {
+display: block;
+margin-left: auto;
+margin-right: auto;
+background: #A020F0;
+color: white;
+border-radius: 30px;
+transition-duration: 0.8s;
+width: 80%;
+height: 20%;
+  }
+
+  .button:hover{
+background: white;
+color: black;}
+
+@media screen and (max-width: 1100px) {
+
+  .section1 {height: 100vh;}
+
+.section2 {grid-template-columns: 1fr;}
+
+.imgs {grid-template-columns: 1fr 1fr;}
+  
+  .section4 {grid-template-columns: 1fr;}
+  
+  .movieexamples {grid-template-columns: 1fr 1fr;}
+  
+  .movieexamples img {width: 95%;}
+  
+  .moviesection {grid-template-columns: 1fr;}
+  
+  .footer-col {
+ width: 50%;
+       }
+  
+ .footer-col h4:not(first-child){
+    margin-top: 2rem;
+}
+  
+  }
+
+@media screen and (max-width: 700px) {
+
+.imgs {
+ grid-template-columns: 1fr 1fr;}
+  
+  .imgs img {
+  max-width: 100%;
+  }
+
+
+.section2 h1 {
+text-align: center;
+
+}
+ 
+
+  
+}
+  
+ 
+@media screen and (max-width: 500px) {
+
+.navbar {
+height: auto;}
+
+.navbar a {
+float: none;
+display: block;
+text-align: center;}
+
+.navbar a:first-of-type {
+float: none;
+text-align: center;}
+
+.navbar a:last-of-type {
+text-align: center;
+background: purple;}
+  
+  .section1 {
+height: 100vh;
+ }
+  
+.section1 h1, h2, h3 {
+  font-size: 0.9rem;}
+
+ 
+  
+  #email {
+    padding: 10px;
+  }
+  
+#submitbutton {
+    padding: 10px 0;
+    height: 2rem;
+  }
+
+.section2 h1 {
+text-wrap: wrap;
+font-size: 1.5rem;}
+  
+  
+  
+  
+  
+  .section3 h1 {
+text-wrap: wrap;
+font-size: 1rem;}
+  
+  .section4 h1 {
+text-wrap: wrap;
+font-size: 1.5rem;}
+  
+  
+ /* .apply {
+ margin-top: ;
+  } */
+  
+.imgs img {
+  max-width: 100%;
+  }
+  
+  .section3 img {
+  max-width: 100%;
+  height: 200px;
+  }
+  
+   
+  .section4 img {
+  width: 90%; 
+  height: 150px;
+  }
+  
+    
+.boxes {
+ width: 80%;
+ height: 200px;
+  }
+  
+  .section5 h1 {
+ font-size: 1rem;
+  }
+
+  .movieexamples img {
+  width: 100%; 
+  height: 150px;
+  }
+  
+  .row {
+   width: 50%;
+   margin: 0 auto;
+   text-align: center;
+    }
+
+  .footer-col {
+ width: 100%;
+ margin-top: 10px;
+ overflow: hidden;
+        }
+  
+    
+  .footer-col h4 {
+  position: static;
+  }
+  
+  .footer-col h4::before {
+ display: none;
+}
+  
+
+}  
+  
+/* @media screen and (max-height: 400px) {
+.navbar {
+height: }
+  } */
+
+
+</style>
+
+<link rel="stylesheet" href="styles.css">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body> 
+
+<div class="navbar">
+
+  <a href="#homepage"><span class="red">V</span>ideo<span class="smaller">ON</span><span span class="red">D</span>emand</a>
+<a href="#register">Register</a>
+<a href="#login">Log in</a>
+
+
+</div>
+
+
+
+<div class="section1">
+<div class="apply">
+<h1>All the latest movies, series and shows</h1>
+<h2>Watch where you want. End subscription when you want.</h2>
+<h3>Are you interested? Fill in your email to create an account</h3>
+<form action="/action_page.php">
+  <input type="email" id="email" name="email" placeholder="E-mail adress" required>
+  <input type="submit" value="Get started" id="submitbutton">
+</form>
+</div>
+</div>
+
+
+<div class="section2">
+<div><h1>See all seasons of True detective</h1></div>
+<div class="imgs">
+<img src="https://m.media-amazon.com/images/M/MV5BNTEzMzBiNGYtYThiZS00MzBjLTk5ZWItM2FmMzU3Y2RjYTVlXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_FMjpg_UX1000_.jpg">
+<img src="https://pyxis.nymag.com/v1/imgs/e7c/1ce/29ba7ab00372a87239627261f7ba8acc70-17-true-detective.2x.h473.w710.jpg">
+<img src="https://ew.com/thmb/Jua28XPVRQyx3FOJh1BH46TOBuc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/true-detective-s1_1-2000-b73d8c089ab64387b2ae805dd4168dde.jpg">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCeJOO-9FXPGvMalP96svQOvvjwBjplyIs0g&usqp=CAU">
+</div>
+</div>
+ 
+<div class="section3">
+<h1>Binge watch all the hottest shows currently</h1>
+<div class="gallery">
+<img src="https://hbomax-images.warnermediacdn.com/images/GX4h8rwVrhsPCwwEAAAIl/tileburnedin?size=640x360&partner=hbomaxcom&v=e4fd5a012ae7ce81cf962c43eb9a817b&host=art-gallery.api.hbo.com&language=sv-se&w=320">  
+<img src="https://ntvb.tmsimg.com/assets/p8681514_b_h10_aa.jpg?w=960&h=540"> 
+<img src="https://hbomax-images.warnermediacdn.com/images/GYsYeoAxKH8LCwgEAAAOR/tileburnedin?size=640x360&partner=hbomaxcom&v=b40b3c85d770ab28580f6ca442ce62a3&host=art-gallery.api.hbo.com&language=sv-se&w=320">
+<img src="https://i-viaplay-com.akamaized.net/viaplay-prod/782/488/1511166849-0ea03cc24878bdd994a166f2320578859a410a1f.jpg?width=960&height=540">
+
+
+<img src="https://i-viaplay-com.akamaized.net/viaplay-prod/225/860/1695298870-ca3dfefeba0a4012fb8870a915c365f9f24007e7.jpg?width=960&height=540">
+<img src="https://img.theweek.in/content/dam/week/news/entertainment/images/2022/11/28/ozark.jpg">
+<img src="https://hbomax-images.warnermediacdn.com/images/GWukCJAq-nIuHwwEAAAB4/tileburnedin?size=640x360&partner=hbomaxcom&v=35581d4075702186282AgainModified&host=art-gallery.api.hbo.com&language=sv-se&w=320">
+<img src="https://hbomax-images.warnermediacdn.com/images/GYYxBtQFFnmbDBwEAAAAE/tileburnedin?size=640x360&partner=hbomaxcom&v=e62774c243ae3831833374d768313fd7&host=art-gallery.api.hbo.com&language=sv-se&w=320">
+</div>
+</div>
+
+<div class="section4">
+  <div class="movies"><h1><span id="bigletter">T</span>he most popular movies</h1>
+   <p>Stream the succesess,<p> including the latest from DC and Warner Bros</p> + the comedies, dramas and the classics you love</p> 
+  </div>
+  
+  <div class="movieexamples">
+  <img src="https://www.folketshushellefors.se/wp-content/uploads/2023/08/Oppenheimer.jpg">
+  <img src="https://hbomax-images.warnermediacdn.com/images/GYY7NkAImuJzDwgEAAAAL/tileburnedin?size=640x360&partner=hbomaxcom&v=da290beffae6f62c7cfbf6533204720b&host=art-gallery.api.hbo.com&language=sv-se&w=320">
+  <img src="https://hbomax-images.warnermediacdn.com/images/GZJHxewqUJZOmPwEAAA4t/tileburnedin?size=640x360&partner=hbomaxcom&v=50d60d5573ccb6c71b596c471fb04334&host=art-gallery.api.hbo.com&language=sv-se&w=320">
+  <img src="https://m.media-amazon.com/images/S/pv-target-images/1fe49386267107d24ada43ca6c550e8ffe8e08e1c3977c87aec6fb6867c3010a.jpg">
+ <img src="https://theedgesusu.co.uk/wp-content/uploads/2023/03/creed-3-01.jpg">
+ <img src="https://bio.nu/wp-content/uploads/2020/07/avatar-816x462.jpg">  
+ </div> 
+  
+</div>
+
+<div class="section5"><h1>Choose your VideoOnDemand subscription</h1>
+
+<div class="subscribe">
+<div class="boxes"><p>Monthly</p><p>90₹/month</p><p>+ end subscription at any time</p>
+<input type="button" class="button" value="Continue">
+</div>
+<div class="boxes"><p>Yearly</p><p>900₹/year</p><p>+ corresponds to 75₹/month</p><input type="button" class="button" value="Continue"></div>
+</div>
+
+
+<footer class="footer">
+  <div class="container">  
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>  
+
+
+
+
+</body> 
+
+
+</html>
